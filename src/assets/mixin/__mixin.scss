@@ -1,0 +1,31 @@
+$desktop-hd: '1800px';
+$desktop: '1200px';
+$tablets: '768px';
+$phones: '480px';
+$iPhone4: '320px';
+
+@mixin desktopHd () {
+  @media screen and (max-width: $desktop-hd) {
+    @content;
+  }
+}
+@mixin desktop () {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin tablets () {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin phones () {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+@mixin iPhone4 () {
+  @media screen and (max-width: $iPhone4) {
+    @content;
+  }
+}
